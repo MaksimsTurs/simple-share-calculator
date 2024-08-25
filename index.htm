@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Share calculator</title>
+</head>
+<body style="position: relative;">
+  <section class="modal_container modal_container_hidden">
+    <form id="share_form_edit" class="modal_body container">
+      <h2 class="form_title">Edit Share</h2>
+      <div class="form_input_container flex_column">
+        <input min="0" class="form_input" name="name" placeholder="Share name" type="text">
+        <input value="0.0" min="0" class="form_input" name="price" placeholder="Share price" type="number" step="0.01">
+        <input value="0.0" min="0" class="form_input" name="dividend" placeholder="Share dividend" type="number" step="0.01">
+        <select class="form_input" name="currency">
+          <option value="€">EUR</option>
+          <option value="$">USD</option>
+        </select>
+      </div>
+      <div style="padding-top: 0.5rem;" class="flex_row_space-between">
+        <button class="form_button stop_editing" type="button">Stop editing</button>
+        <button class="form_button" type="submit">Save</button>
+      </div>
+    </form>
+  </section>
+  <div class="form_container flex_column">
+    <form id="share_insert_form" class="container flex_column">
+      <h2 class="form_title">Push new Share</h2>
+      <div class="form_input_container flex_column">
+        <input class="form_input" name="name" placeholder="Share name" type="text">
+        <input value="0.0" min="0" class="form_input" name="price" placeholder="Share price" type="number" step="0.01">
+        <input value="0.0" min="0" class="form_input" name="dividend" placeholder="Share dividend" type="number" step="0.01">
+        <input id="budget_input" value="0.0" min="0" name="budget" class="form_input" type="number" placeholder="My budget" step="0.01">
+        <select class="form_input" name="currency">
+          <option value="€">EUR</option>
+          <option value="$">USD</option>
+        </select>
+      </div>
+      <button class="form_button" type="submit">Push</button>
+    </form>
+  </div>
+  <div class="flex_column container_max_width">
+    <ul id="share_list" class="share_container container flex_column">
+      <li class="share_list_header flex_row_space-between">
+        <p>Name</p>
+        <p>Price</p>
+        <p>Divident</p>
+        <p>Potential count</p>
+        <p>Max divident</p>
+        <p>Actions</p>
+      </li>
+    </ul>
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

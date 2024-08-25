@@ -1,0 +1,75 @@
+.share_list_empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.share_container {
+  gap: 0rem !important;
+}
+
+.share_list_item {
+ display: flex; 
+ align-items: center;
+ border-bottom: 1px solid black;
+ padding: 0.5rem 0rem;
+}
+
+.share_list_item:last-child {
+  border-bottom: none;
+}
+
+.share_list_item > section {
+  text-align: center;
+}
+
+.share_list_item > section:last-child {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  gap: 0.5rem;
+}
+
+.share_list_header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.share_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 0.25rem 1.25rem;
+}
+
+.share_button > svg {
+  pointer-events: none;
+}
+
+.delete {
+  transition: all 0.15s ease;
+  border: 1px solid rgb(161, 0, 0);
+  color: rgb(161, 0, 0);
+}
+
+.delete:hover {
+  transition: all 0.15s ease;
+  background-color: rgb(161, 0, 0);
+  color: white;
+}
+
+.edit {
+  transition: all 0.15s ease;
+  border: 1px solid rgb(10, 120, 0);
+  color: rgb(10, 120, 0);
+}
+
+.edit:hover {
+  transition: all 0.15s ease;
+  background-color: rgb(10, 120, 0);
+  color: white;
+}

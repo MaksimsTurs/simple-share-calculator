@@ -1,0 +1,22 @@
+.container {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: silver 1px 4px 3px;
+  padding: 1rem;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flex_row_space-between {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.container_max_width {
+  width: 100%;
+}
